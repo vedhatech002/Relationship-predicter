@@ -23,7 +23,7 @@
   z-index: 3;
 }
 .path {
-  stroke: rgba(3, 3, 3, 0.95);
+  stroke: rgb(255 255 255);
   stroke-width: 4;
   stroke-dasharray: 1000px;
   stroke-dashoffset: 1000px;
@@ -40,7 +40,7 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: rgba(209, 28, 28, 0.705);
+  background-color: rgb(1 1 1 / 95%);
   position: absolute;
   z-index: 1;
   margin: auto;
@@ -69,8 +69,8 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: rgba(230, 92, 92, 0.774);
-  box-shadow: 0 0 40px 20px #fff;
+  background-color: rgb(137 196 208);
+  box-shadow: 0 0 40px 20px #171e20ad;
   position: absolute;
   z-index: -1;
   opacity: 0.9;
