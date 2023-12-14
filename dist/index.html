@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relationship predicter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" crossorigin href="/assets/index-L_KYul3Q.css">
+  </head>
+  <body class="font-krona relative">
+    <header class="py-2.5 shadow">
+      <!--  -->
+      <div class="flex items-center justify-center gap-1">
+        <img class="w-[35px] h-[35px]" src="/assets/logo-YJHGCBUr.png" alt="hearts" />
+        <h2 class="text-lg text-black font-normal">Relationship finder</h2>
+      </div>
+    </header>
+    <main>
+      <!-- main home -->
+      <section class="">
+        <!--home page  img div-->
+        <div class="mt-14 flex items-center justify-center">
+          <img
+            class="w-[267px] h-[187px]"
+            src="/assets/home-FBQpU6bn.jpg"
+            alt="relationship"
+          />
+        </div>
+        <!-- forms -->
+        <div class="mt-16 flex flex-col items-center gap-10" id="input-fields">
+          <div class="flex flex-col relative">
+            <input
+              class="rounded-lg border-[1.8px] border-black px-3 py-1.5 outline-none"
+              type="text"
+              name=""
+              id="male-name"
+              placeholder="Male name"
+              required
+            />
+            <small class="text-red-500 px-2 py-1 absolute top-9"></small>
+          </div>
+          <div class="flex flex-col relative">
+            <input
+              class="rounded-lg border-[1.8px] border-black px-3 py-1.5 outline-none"
+              type="text"
+              name=""
+              id="female-name"
+              placeholder="Female name"
+              required
+            />
+            <small class="text-red-500 px-2 py-1 absolute top-9"></small>
+          </div>
+          <button
+            id="predict-btn"
+            class="px-[5.5rem] py-1.5 text-white bg-black rounded-lg"
+          >
+            Predict
+          </button>
+        </div>
+      </section>
+      <!-- result section -->
+      <section
+        class="absolute z-[10] w-full top-0 bg-white py-28 px-8 hidden"
+        id="result-page"
+      >
+        <div class="flex flex-col items-center justify-center gap-16">
+          <h2 class="mx-auto text-center text-[22px]" id="result">
+            you guys are Affecnative 🤗
+          </h2>
+          <img id="result-img" class="w-[250px] h-[250px]" src="" alt="" />
+          <button class="w-[80%] px-[2] py-1.5 text-white bg-black rounded-lg">
+            Predict more names
+          </button>
+        </div>
+      </section>
+      <!-- result end -->
+      <!--loading animation -->
+      <section
+        id="loader"
+        class="absolute z-10 top-0 bg-white w-full h-screen hidden"
+      >
+        <div class="heartbeatloader mx-auto my-auto">
+          <svg
+            class="svgdraw"
+            width="100%"
+            height="100%"
+            viewBox="0 0 150 400"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="path"
+              d="M 0 200 l 40 0 l 5 -40 l 5 40 l 10 0 l 5 15 l 10 -140 l 10 220 l 5 -95 l 10 0 l 5 20 l 5 -20 l 30 0"
+              fill="transparent"
+              stroke-width="4"
+              stroke="black"
+            />
+          </svg>
+          <div class="innercircle"></div>
+          <div class="outercircle"></div>
+        </div>
+      </section>
+    </main>
+    <script src="./public/js/app.js"></script>
+  </body>
+</html>
