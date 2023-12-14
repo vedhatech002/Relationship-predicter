@@ -33,23 +33,28 @@
         </div>
         <!-- forms -->
         <div class="mt-16 flex flex-col items-center gap-10" id="input-fields">
-          <input
-            class="rounded-lg border-[1.8px] border-black px-3 py-1.5 outline-none"
-            type="text"
-            name=""
-            id="male-name"
-            placeholder="Male name"
-            required
-          />
-          <input
-            class="rounded-lg border-[1.8px] border-black px-3 py-1.5 outline-none"
-            type="text"
-            name=""
-            id="female-name"
-            placeholder="Female name"
-            required
-          />
-
+          <div class="flex flex-col relative">
+            <input
+              class="rounded-lg border-[1.8px] border-black px-3 py-1.5 outline-none"
+              type="text"
+              name=""
+              id="male-name"
+              placeholder="Male name"
+              required
+            />
+            <small class="text-red-500 px-2 py-1 absolute top-9"></small>
+          </div>
+          <div class="flex flex-col relative">
+            <input
+              class="rounded-lg border-[1.8px] border-black px-3 py-1.5 outline-none"
+              type="text"
+              name=""
+              id="female-name"
+              placeholder="Female name"
+              required
+            />
+            <small class="text-red-500 px-2 py-1 absolute top-9"></small>
+          </div>
           <button
             id="predict-btn"
             class="px-[5.5rem] py-1.5 text-white bg-black rounded-lg"
