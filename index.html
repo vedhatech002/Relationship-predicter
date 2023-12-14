@@ -32,13 +32,14 @@
           />
         </div>
         <!-- forms -->
-        <div class="mt-16 flex flex-col items-center gap-10">
+        <div class="mt-16 flex flex-col items-center gap-10" id="input-fields">
           <input
             class="rounded-lg border-[1.8px] border-black px-3 py-1.5 outline-none"
             type="text"
             name=""
             id="male-name"
             placeholder="Male name"
+            required
           />
           <input
             class="rounded-lg border-[1.8px] border-black px-3 py-1.5 outline-none"
@@ -46,27 +47,27 @@
             name=""
             id="female-name"
             placeholder="Female name"
+            required
           />
 
-          <button class="px-[5.5rem] py-1.5 text-white bg-black rounded-lg">
+          <button
+            id="predict-btn"
+            class="px-[5.5rem] py-1.5 text-white bg-black rounded-lg"
+          >
             Predict
           </button>
         </div>
       </section>
       <!-- result section -->
       <section
-        class="absolute z-10 w-full top-0 bg-white py-28 px-8 hidden"
-        id="result"
+        class="absolute z-[10] w-full top-0 bg-white py-28 px-8 hidden"
+        id="result-page"
       >
         <div class="flex flex-col items-center justify-center gap-16">
           <h2 class="mx-auto text-center text-[22px]" id="result">
             you guys are Affecnative 🤗
           </h2>
-          <img
-            class="w-[250px] h-[250px]"
-            src="/public/img/affection.jpg"
-            alt="alt"
-          />
+          <img id="result-img" class="w-[250px] h-[250px]" src="" alt="" />
           <button class="w-[80%] px-[2] py-1.5 text-white bg-black rounded-lg">
             Predict more names
           </button>
@@ -74,7 +75,10 @@
       </section>
       <!-- result end -->
       <!--loading animation -->
-      <section class="absolute z-10 top-0 bg-white w-full h-screen hidden">
+      <section
+        id="loader"
+        class="absolute z-10 top-0 bg-white w-full h-screen hidden"
+      >
         <div class="heartbeatloader mx-auto my-auto">
           <svg
             class="svgdraw"
