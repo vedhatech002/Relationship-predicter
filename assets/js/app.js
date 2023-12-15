@@ -15,31 +15,36 @@ const predictMoreBtn = resultPageEl.querySelector("div > button");
 // console.log(predictBtn);
 // console.log(loaderEl);
 // console.log(predictMoreBtn);
-
+import freindsImg from "/public/img/freinds.jpg?url";
+import loveImg from "/public/img/love.jpg?url";
+import affectionImg from "/public/img/affection.jpg?url";
+import marriageImg from "/public/img/marriage.jpg?url";
+import enimiesImg from "/public/img/enimies.jpg?url";
+import brotherSisterImg from "/public/img/brotherandsister.jpg?url";
 const flamesObject = {
   0: {
     result: "you guys are freinds ✌️",
-    resultImg: "public/img/freinds.jpg",
+    resultImg: freindsImg,
   },
   1: {
     result: "you guys are in love ❤️",
-    resultImg: "public/img/love.jpg",
+    resultImg: loveImg,
   },
   2: {
     result: "you guys have affection 😇 ",
-    resultImg: "public/img/affection.jpg",
+    resultImg: affectionImg,
   },
   3: {
     result: "you guys get Married soon 🎉 ",
-    resultImg: "public/img/marriage.jpg",
+    resultImg: marriageImg,
   },
   4: {
     result: "you guys are Enemies 👿 ",
-    resultImg: "public/img/enimies.jpg",
+    resultImg: enimiesImg,
   },
   5: {
     result: "You guys are Brother and Sister 😅 ",
-    resultImg: "public/img/brotherandsister.jpg",
+    resultImg: brotherSisterImg,
   },
 };
 
