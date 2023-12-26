@@ -10,11 +10,7 @@ const resultEl = document.getElementById("result");
 const resultImgEl = document.getElementById("result-img");
 const predictMoreBtn = resultPageEl.querySelector("div > button");
 
-// console.log(maleInputEl);
-// console.log(femaleInputEl);
-// console.log(predictBtn);
-// console.log(loaderEl);
-// console.log(predictMoreBtn);
+
 import freindsImg from "/public/img/freinds.jpg?url";
 import loveImg from "/public/img/love.jpg?url";
 import affectionImg from "/public/img/affection.jpg?url";
@@ -23,7 +19,7 @@ import enimiesImg from "/public/img/enimies.jpg?url";
 import brotherSisterImg from "/public/img/brotherandsister.jpg?url";
 const flamesObject = {
   0: {
-    result: "you guys are freinds ✌️",
+    result: "you guys are friends ✌️",
     resultImg: freindsImg,
   },
   1: {
@@ -49,10 +45,8 @@ const flamesObject = {
 };
 
 function predictRelationship() {
-  //get input names from input box and transform to lower case
 
-  // console.log(maleName);
-  // console.log(femaleName);
+
 
   //validatte function return validate value
   let getInputNames = validation();
